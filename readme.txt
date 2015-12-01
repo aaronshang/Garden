@@ -1,3 +1,7 @@
-Git is a version control system.
+目标：
+	用于完成Demo验证的功能
 
-I will write a project using to test.
+包含功能：
+
+	1、高仿百度离线包
+
