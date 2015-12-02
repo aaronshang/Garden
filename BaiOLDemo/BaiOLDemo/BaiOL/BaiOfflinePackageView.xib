@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiOfflinePackageViewController">
+            <connections>
+                <outlet property="mContainerView" destination="2pA-UJ-Rs0" id="zB4-EI-EYO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Rne-hv-VGs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="d47-SB-ymD">
+                    <rect key="frame" x="234" y="80" width="133" height="29"/>
+                    <segments>
+                        <segment title="下载管理"/>
+                        <segment title="城市列表"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChanged:" destination="-1" eventType="valueChanged" id="2b5-vF-3zb"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pA-UJ-Rs0">
+                    <rect key="frame" x="8" y="121" width="592" height="479"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d47-SB-ymD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5t4-un-Jfh"/>
+                <constraint firstItem="d47-SB-ymD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="7z8-ut-NCe"/>
+                <constraint firstItem="2pA-UJ-Rs0" firstAttribute="top" secondItem="d47-SB-ymD" secondAttribute="bottom" constant="13" id="Cb0-EE-tzP"/>
+                <constraint firstAttribute="bottom" secondItem="2pA-UJ-Rs0" secondAttribute="bottom" id="Fpl-mm-2fe"/>
+                <constraint firstItem="2pA-UJ-Rs0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="gFh-bn-SGL"/>
+                <constraint firstAttribute="trailing" secondItem="2pA-UJ-Rs0" secondAttribute="trailing" id="jco-ux-rTB"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>
